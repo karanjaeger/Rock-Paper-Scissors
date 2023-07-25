@@ -45,6 +45,7 @@ function Game()
         playerSelection = prompt("Rock, Paper or Scissors?: ");
         computerSelection = computerChoice();
         console.log(playRound(playerSelection, computerSelection));
+        console.log(`Player: ${playerScore} Computer: ${computerScore}`);
     }
     if (playerScore > computerScore)
     {
@@ -56,7 +57,7 @@ function Game()
     }
     else 
     {   
-        console.log("Stalemate!Rock");
+        console.log("Stalemate!");
     }    
 }
 
